@@ -1,0 +1,23 @@
+
+Pelajaran 1 : Vector / Array Dinamis
+
+- Vector: adalah standard template library(STL) pada c++ yang mirip dengan array namum vector lebih dinamis (bisa tambah/kurangi elemen dengan mudah tanpa mempengaruhi size nya). Vector biasanya disebut sebagai array dinamis.
+
+- Fitur-fitur pada vector:
+    - push_back() : utk menambahkan elemen baru dari belakang
+    - pop_back() : menghapus elemen dari belakang
+    - front() : mengakses elemen awal (yaitu elemen pada indeks 0)
+    - back() : akses elemen akhir
+    - size() : jumlah elemen yg saat ini dalam vector
+    - capacity() : jumlah total ruang pada vector. capacity selalu >= size
+    - shrink_to_fit() : untuk membuat kapasitas sesuai dengan size
+    - clear() : menghapus semua elemen
+    - insert() : untuk memasukan elemen ke dalam vector, memiliki 2 parameter
+        - insert(<iterator>, <value>)
+        - insert(.begin(), value)
+        - insert(.end(), value)
+        - insert(.end() - 2, value)
+        - insert(.begin() + 2, value)
+    - erase() : untuk menghapus elemen, aturannya sama dengan insert
+        - erase(.begin())
+        - erase(.begin() + 3)
